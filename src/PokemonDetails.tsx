@@ -26,7 +26,7 @@ function PokemonDetails() {
 }
 
 const PokemonSelect = ({ pokemons }: { pokemons: any[] }) => {
-  const [selection, setSelection] = useState<null | sring>(
+  const [selection, setSelection] = useState<null | string>(
     () => pokemons?.[0]?.name
   );
 
@@ -36,7 +36,7 @@ const PokemonSelect = ({ pokemons }: { pokemons: any[] }) => {
 
   return (
     <>
-      <label for="Pokemon">Choose a Pokemon: </label>
+      <label htmlFor="Pokemon">Choose a Pokemon: </label>
       <select
         name="Pokemon"
         id="Pokemon"
